@@ -61,7 +61,6 @@ def find_emscripten(conf):
 	cxx = conf.find_program(['em++'], var='CXX')
 	conf.env.CXX = cxx
 	conf.env.CXX_NAME = 'emscripten'
-
 	conf.find_program(['emar'], var='AR')
 
 def configure(conf):
